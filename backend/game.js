@@ -73,8 +73,9 @@ module.exports = class Game extends Room {
   }
 
   renew() {
-    const NINETY_MINUTES = 1000 * 60 * 90;
-    this.expires = Date.now() + NINETY_MINUTES;
+    //const NINETY_MINUTES = 1000 * 60 * 90;
+    const ONE_YEAR = 1000* 60 * 60 * 24 * 365;
+    this.expires = Date.now() + ONE_YEAR;
   }
 
   get isActive() {
